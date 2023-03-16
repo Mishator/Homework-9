@@ -5,6 +5,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -122,6 +123,20 @@ public class Main {
             }
         }
         System.out.println();
+        System.out.println();
         }
 
+        public static void task4 () {
+            System.out.println("Задача 4");
+            int[] array = new int[3];
+            array[0] = 1;
+            array[1] = 2;
+            array[2] = 3;
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] % 2 != 0) {
+                    array[i] += 1;
+                }
+            }
+            System.out.println(Arrays.toString(array));
+        }
 }
