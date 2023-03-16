@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -79,5 +80,48 @@ public class Main {
         }
         System.out.println();
     }
+
+    public static void task3 () {
+        System.out.println("Задача 3");
+        int[] array = new int[3];
+        array[0] = 1;
+        array[1] = 2;
+        array[2] = 3;
+        for (int i = array.length - 1; i >= 0; i--) {
+            System.out.print(array[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        double[] myArray  = {1.57, 7.654, 9.986};
+        for (int i = myArray.length - 1; i >= 0; i--) {
+            System.out.print(myArray[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        short[] myDate = new short[5];
+        myDate[0] = 1925;
+        short date1 = myDate[0];
+        myDate[1] = 1989;
+        short date2 = myDate[1];
+        myDate[2] = 1984;
+        short date3 = myDate[2];
+        myDate[3] = 2008;
+        short date4 = myDate[3];
+        myDate[4] = 2012;
+        short date5 = myDate[4];
+        for (int i = myDate.length - 1; i >= 0; i--) {
+            System.out.print(myDate[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        }
 
 }
